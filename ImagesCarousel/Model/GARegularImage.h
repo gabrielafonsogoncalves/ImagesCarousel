@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GAImage : NSObject
+@interface GARegularImage : NSObject
+
+@property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) NSString *imageLink;
+@property (strong, nonatomic) NSString *anotherLink;
 
 @end

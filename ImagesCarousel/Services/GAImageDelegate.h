@@ -10,4 +10,7 @@
 
 @protocol GAImageDelegate <NSObject>
 
+@required
+- (void)showImages:(NSArray *)images;
+
 @end

@@ -6,8 +6,11 @@
 //  Copyright (c) 2015 ETC. All rights reserved.
 //
 
-#import "GAImage.h"
+#import "GARegularImage.h"
 
-@implementation GAImage
+@implementation GARegularImage
+
+@synthesize title;
+@synthesize imageLink;
 
 @end

@@ -6,9 +6,16 @@
 //  Copyright (c) 2015 ETC. All rights reserved.
 //
 
-#import "GARSSTableViewCell.h"
+#import "GAImageTableViewCell.h"
 
-@implementation GARSSTableViewCell
+@implementation GAImageTableViewCell
+
+- (void)prepareForReuse
+{
+    [super prepareForReuse];
+    self.logoImageView.image = nil;
+    self.titleLabel.text = @"";
+}
 
 - (void)awakeFromNib {
     // Initialization code

@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GARSSTableViewCell : UITableViewCell
+@interface GAImageTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
-@property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *logoImageView;
 
 @end

@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  ImagesCarousel
+//  PlayStationRSSFeed
 //
 //  Created by Gabriel Afonso on 1/29/15.
 //  Copyright (c) 2015 ETC. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "GAMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    GAMainViewController *firstViewController = [[GAMainViewController alloc] initWithNibName:@"GAMainViewController" bundle:nil];
+    [self.window setRootViewController:firstViewController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

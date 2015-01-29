@@ -10,4 +10,12 @@
 
 @implementation GAImageBuilder
 
+- (GARegularImage *)buildObjectFromJSON:(NSDictionary *)json
+{
+    GARegularImage *image = [[GARegularImage alloc] init];
+    image.imageLink = json[@"image_url"];
+    image.title = json[@"caption"];
+    return image;
+}
+
 @end

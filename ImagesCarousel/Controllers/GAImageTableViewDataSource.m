@@ -6,26 +6,28 @@
 //  Copyright (c) 2015 ETC. All rights reserved.
 //
 
-#import "GARSSTableViewDataSource.h"
-#import "GARSSTableViewCell.h"
-#import "GAFeed.h"
+#import "GAImageTableViewDataSource.h"
+#import "GAImageTableViewCell.h"
+#import "GARegularImage.h"
+#import "GAImageService.h"
 
-@implementation GARSSTableViewDataSource
+@implementation GAImageTableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.items.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    GARSSTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RSS-Cell"];
+    GAImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RSS-Cell"];
     
     if (!cell) {
-        [tableView registerNib:[UINib nibWithNibName:@"GARSSTableViewCell" bundle:nil] forCellReuseIdentifier:@"RSS-Cell"];
+        [tableView registerNib:[UINib nibWithNibName:@"GAImageTableViewCell" bundle:nil] forCellReuseIdentifier:@"RSS-Cell"];
         cell = [tableView dequeueReusableCellWithIdentifier:@"RSS-Cell"];
     }
-    GAFeed *feed = self.items[indexPath.row];
-    cell.titleLabel.text = feed.title;
-    cell.descriptionLabel.text = feed.feedContent;
+    GARegularImage *image = self.items[indexPath.row];
+    cell.titleLabel.text = image.title;
+    GAImageService *imageService = [[GAImageService alloc] init];
+    [imageService loadImage:image.imageLink inImageView:cell.logoImageView];
     
     return cell;
 }

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69E732E9231F4B38BF8FECDC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08851618E67243A3BCDDDC3C /* libPods.a */; };
+		D90060521A7A225B009AB89C /* GAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D900604D1A7A225B009AB89C /* GAMainViewController.m */; };
+		D90060531A7A225B009AB89C /* GAImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D900604F1A7A225B009AB89C /* GAImageTableViewCell.m */; };
+		D90060541A7A225B009AB89C /* GAImageTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D90060511A7A225B009AB89C /* GAImageTableViewDataSource.m */; };
+		D90060571A7A2266009AB89C /* GAMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90060551A7A2266009AB89C /* GAMainViewController.xib */; };
+		D90060581A7A2266009AB89C /* GAImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90060561A7A2266009AB89C /* GAImageTableViewCell.xib */; };
+		D900605B1A7A2274009AB89C /* GAQueueService.m in Sources */ = {isa = PBXBuildFile; fileRef = D900605A1A7A2274009AB89C /* GAQueueService.m */; };
+		D900605E1A7A23EB009AB89C /* GAImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = D900605D1A7A23EB009AB89C /* GAImageService.m */; };
+		D90060611A7A2475009AB89C /* GARegularImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D90060601A7A2475009AB89C /* GARegularImage.m */; };
+		D90060661A7A2671009AB89C /* GAImageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D90060651A7A2671009AB89C /* GAImageBuilder.m */; };
+		D90060691A7A2EAF009AB89C /* ic_no_image.png in Resources */ = {isa = PBXBuildFile; fileRef = D90060681A7A2EAF009AB89C /* ic_no_image.png */; };
 		D9ADB1961A7A21690067E689 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9ADB1951A7A21690067E689 /* main.m */; };
 		D9ADB1991A7A21690067E689 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9ADB1981A7A21690067E689 /* AppDelegate.m */; };
 		D9ADB19B1A7A21690067E689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9ADB19A1A7A21690067E689 /* Images.xcassets */; };
@@ -25,6 +36,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08851618E67243A3BCDDDC3C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804B294DC41C412A8F9AF48B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D900604C1A7A225B009AB89C /* GAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAMainViewController.h; path = Controllers/GAMainViewController.h; sourceTree = "<group>"; };
+		D900604D1A7A225B009AB89C /* GAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAMainViewController.m; path = Controllers/GAMainViewController.m; sourceTree = "<group>"; };
+		D900604E1A7A225B009AB89C /* GAImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAImageTableViewCell.h; path = Controllers/GAImageTableViewCell.h; sourceTree = "<group>"; };
+		D900604F1A7A225B009AB89C /* GAImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAImageTableViewCell.m; path = Controllers/GAImageTableViewCell.m; sourceTree = "<group>"; };
+		D90060501A7A225B009AB89C /* GAImageTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAImageTableViewDataSource.h; path = Controllers/GAImageTableViewDataSource.h; sourceTree = "<group>"; };
+		D90060511A7A225B009AB89C /* GAImageTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAImageTableViewDataSource.m; path = Controllers/GAImageTableViewDataSource.m; sourceTree = "<group>"; };
+		D90060551A7A2266009AB89C /* GAMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GAMainViewController.xib; path = Views/GAMainViewController.xib; sourceTree = "<group>"; };
+		D90060561A7A2266009AB89C /* GAImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GAImageTableViewCell.xib; path = Views/GAImageTableViewCell.xib; sourceTree = "<group>"; };
+		D90060591A7A2274009AB89C /* GAQueueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAQueueService.h; path = Services/GAQueueService.h; sourceTree = "<group>"; };
+		D900605A1A7A2274009AB89C /* GAQueueService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAQueueService.m; path = Services/GAQueueService.m; sourceTree = "<group>"; };
+		D900605C1A7A23EB009AB89C /* GAImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAImageService.h; path = Services/GAImageService.h; sourceTree = "<group>"; };
+		D900605D1A7A23EB009AB89C /* GAImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAImageService.m; path = Services/GAImageService.m; sourceTree = "<group>"; };
+		D900605F1A7A2475009AB89C /* GARegularImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GARegularImage.h; path = Model/GARegularImage.h; sourceTree = "<group>"; };
+		D90060601A7A2475009AB89C /* GARegularImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GARegularImage.m; path = Model/GARegularImage.m; sourceTree = "<group>"; };
+		D90060621A7A2530009AB89C /* GAImageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAImageDelegate.h; path = Services/GAImageDelegate.h; sourceTree = "<group>"; };
+		D90060641A7A2671009AB89C /* GAImageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAImageBuilder.h; path = Builder/GAImageBuilder.h; sourceTree = "<group>"; };
+		D90060651A7A2671009AB89C /* GAImageBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAImageBuilder.m; path = Builder/GAImageBuilder.m; sourceTree = "<group>"; };
+		D90060681A7A2EAF009AB89C /* ic_no_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_no_image.png; path = Resources/ic_no_image.png; sourceTree = "<group>"; };
 		D9ADB1901A7A21690067E689 /* ImagesCarousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagesCarousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9ADB1941A7A21690067E689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9ADB1951A7A21690067E689 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E732E9231F4B38BF8FECDC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,12 +87,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		451EBF21BDBE46C28D1626A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08851618E67243A3BCDDDC3C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D90060481A7A2212009AB89C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D900604C1A7A225B009AB89C /* GAMainViewController.h */,
+				D900604D1A7A225B009AB89C /* GAMainViewController.m */,
+				D900604E1A7A225B009AB89C /* GAImageTableViewCell.h */,
+				D900604F1A7A225B009AB89C /* GAImageTableViewCell.m */,
+				D90060501A7A225B009AB89C /* GAImageTableViewDataSource.h */,
+				D90060511A7A225B009AB89C /* GAImageTableViewDataSource.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D90060491A7A2217009AB89C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D90060591A7A2274009AB89C /* GAQueueService.h */,
+				D900605A1A7A2274009AB89C /* GAQueueService.m */,
+				D900605C1A7A23EB009AB89C /* GAImageService.h */,
+				D900605D1A7A23EB009AB89C /* GAImageService.m */,
+				D90060621A7A2530009AB89C /* GAImageDelegate.h */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		D900604A1A7A221D009AB89C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D90060551A7A2266009AB89C /* GAMainViewController.xib */,
+				D90060561A7A2266009AB89C /* GAImageTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D900604B1A7A2247009AB89C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D900605F1A7A2475009AB89C /* GARegularImage.h */,
+				D90060601A7A2475009AB89C /* GARegularImage.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D90060631A7A265C009AB89C /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				D90060641A7A2671009AB89C /* GAImageBuilder.h */,
+				D90060651A7A2671009AB89C /* GAImageBuilder.m */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
+		D90060671A7A2E8D009AB89C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D90060681A7A2EAF009AB89C /* ic_no_image.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D9ADB1871A7A21690067E689 = {
 			isa = PBXGroup;
 			children = (
 				D9ADB1921A7A21690067E689 /* ImagesCarousel */,
 				D9ADB1A61A7A21690067E689 /* ImagesCarouselTests */,
 				D9ADB1911A7A21690067E689 /* Products */,
+				804B294DC41C412A8F9AF48B /* Pods.xcconfig */,
+				451EBF21BDBE46C28D1626A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +178,12 @@
 		D9ADB1921A7A21690067E689 /* ImagesCarousel */ = {
 			isa = PBXGroup;
 			children = (
+				D90060671A7A2E8D009AB89C /* Resources */,
+				D90060631A7A265C009AB89C /* Builder */,
+				D900604B1A7A2247009AB89C /* Model */,
+				D900604A1A7A221D009AB89C /* Views */,
+				D90060491A7A2217009AB89C /* Services */,
+				D90060481A7A2212009AB89C /* Controllers */,
 				D9ADB1971A7A21690067E689 /* AppDelegate.h */,
 				D9ADB1981A7A21690067E689 /* AppDelegate.m */,
 				D9ADB19A1A7A21690067E689 /* Images.xcassets */,
@@ -118,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9ADB1AD1A7A21690067E689 /* Build configuration list for PBXNativeTarget "ImagesCarousel" */;
 			buildPhases = (
+				127267143D604D1FA423E154 /* Check Pods Manifest.lock */,
 				D9ADB18C1A7A21690067E689 /* Sources */,
 				D9ADB18D1A7A21690067E689 /* Frameworks */,
 				D9ADB18E1A7A21690067E689 /* Resources */,
+				FC4DAB5C09AE422E9FE83208 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +303,9 @@
 			files = (
 				D9ADB19E1A7A21690067E689 /* LaunchScreen.xib in Resources */,
 				D9ADB19B1A7A21690067E689 /* Images.xcassets in Resources */,
+				D90060581A7A2266009AB89C /* GAImageTableViewCell.xib in Resources */,
+				D90060691A7A2EAF009AB89C /* ic_no_image.png in Resources */,
+				D90060571A7A2266009AB89C /* GAMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,13 +318,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		127267143D604D1FA423E154 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC4DAB5C09AE422E9FE83208 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9ADB18C1A7A21690067E689 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D9ADB1991A7A21690067E689 /* AppDelegate.m in Sources */,
+				D900605E1A7A23EB009AB89C /* GAImageService.m in Sources */,
+				D90060521A7A225B009AB89C /* GAMainViewController.m in Sources */,
+				D90060531A7A225B009AB89C /* GAImageTableViewCell.m in Sources */,
+				D900605B1A7A2274009AB89C /* GAQueueService.m in Sources */,
 				D9ADB1961A7A21690067E689 /* main.m in Sources */,
+				D90060661A7A2671009AB89C /* GAImageBuilder.m in Sources */,
+				D90060541A7A225B009AB89C /* GAImageTableViewDataSource.m in Sources */,
+				D90060611A7A2475009AB89C /* GARegularImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +476,7 @@
 		};
 		D9ADB1AE1A7A21690067E689 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 804B294DC41C412A8F9AF48B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImagesCarousel/Info.plist;
@@ -333,6 +487,7 @@
 		};
 		D9ADB1AF1A7A21690067E689 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 804B294DC41C412A8F9AF48B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImagesCarousel/Info.plist;
@@ -394,6 +549,7 @@
 				D9ADB1AF1A7A21690067E689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9ADB1B01A7A21690067E689 /* Build configuration list for PBXNativeTarget "ImagesCarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +558,7 @@
 				D9ADB1B21A7A21690067E689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

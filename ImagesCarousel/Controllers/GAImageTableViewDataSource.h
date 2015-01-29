@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface GARSSTableViewDataSource : NSObject <UITableViewDataSource>
+@interface GAImageTableViewDataSource : NSObject <UITableViewDataSource>
 
 @property (strong, nonatomic) NSArray *items;
 

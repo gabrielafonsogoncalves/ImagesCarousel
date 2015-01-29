@@ -7,13 +7,12 @@
 //
 
 #import "GAMainViewController.h"
-#import "GARSSTableViewDataSource.h"
-#import "GAFeedService.h"
-#import "GAFeed.h"
+#import "GAImageTableViewDataSource.h"
+#import "GAImageService.h"
 
 @interface GAMainViewController ()
 
-@property (strong, nonatomic) GARSSTableViewDataSource *dataSource;
+@property (strong, nonatomic) GAImageTableViewDataSource *dataSource;
 
 @end
 
@@ -21,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSource = [[GARSSTableViewDataSource alloc ] init];
+    self.dataSource = [[GAImageTableViewDataSource alloc ] init];
     self.tableView.dataSource = self.dataSource;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     [self loadRSSFeeds];
@@ -33,15 +32,15 @@
 
 - (void)loadRSSFeeds {
     [self.activityIndicator startAnimating];
-    GAFeedService *feedService = [[GAFeedService alloc] init];
-    feedService.delegate = self;
-    [feedService fetchPlaystationFeeds];
+    GAImageService *imageService = [[GAImageService alloc] init];
+    imageService.delegate = self;
+    [imageService fetchImages];
 }
 
-#pragma mark GAFeedDelegate
+#pragma mark GAImageDelegate
 
-- (void)showFeeds:(NSArray *)feeds {
-    self.dataSource.items = feeds;
+- (void)showImages:(NSArray *)images {
+    self.dataSource.items = images;
     [self.tableView reloadData];
     [self.activityIndicator stopAnimating];
 }
