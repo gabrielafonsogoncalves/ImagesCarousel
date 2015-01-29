@@ -23,14 +23,14 @@
     self.dataSource = [[GAImageTableViewDataSource alloc ] init];
     self.tableView.dataSource = self.dataSource;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    [self loadRSSFeeds];
+    [self loadImages];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-- (void)loadRSSFeeds {
+- (void)loadImages {
     [self.activityIndicator startAnimating];
     GAImageService *imageService = [[GAImageService alloc] init];
     imageService.delegate = self;
